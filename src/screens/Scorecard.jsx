@@ -3,21 +3,22 @@ import React from 'react'
 const Scorecard = () => {
   return (
     <>
-      <div className="words">Scorecard</div>
-      <table>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+      <div className="container">
+        <table>
+          <thead>
+            <td className="tableStatic">Players:</td>
+            <td className="tableIn"><input type="text" /></td>
+            <td className="tableIn"><input type="text" /></td>
 
-        </tr>
-        <tr>
-          <td>Birds</td>
-          <td><input type="number" /></td>
-          <td><input type="number" /></td>
+          </thead>
+          <tr>
+            <td className="tableStatic">Birds</td>
+            <td className="tableIn"><input type="number" /></td>
+            <td className="tableIn"><input type="number" /></td>
 
-        </tr>
-      </table>
+          </tr>
+        </table>
+      </div>
     </>
   )
 }
